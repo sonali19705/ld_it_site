@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.2">
     <title>Information Technology Department</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,26 +13,19 @@
 
 <body>
 
-    <!-- Header and Navigation Bar -->
+     <!-- Header and Navigation Bar -->
     <header>
         <div class="header-container">
             <div class="logo">
-                <!-- Using a simple gear icon as a placeholder logo -->
                 <img src="https://ldce.ac.in/upload/logo/departments/information-technology-logo.png" alt="LDCE Logo">
                 <h1>Information Technology Department</h1>
             </div>
-            
-            <!-- Hamburger Button (added) -->
-            <div class="menu-toggle">☰</div>
-
             <nav>
                 <ul>
                     <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#ssip" class="nav-link">SSIP</a></li>
                     <li><a href="#facilities" class="nav-link">Facilities</a></li>
                     <li><a href="#industry" class="nav-link">Industry</a></li>
                     <li><a href="#magazines" class="nav-link">Magazines</a></li>
-                    <li><a href="#feedback" class="nav-link">Feedback</a></li>
                     <li><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </nav>
@@ -66,7 +59,7 @@
             </div>
         </section>
 
-         <!-- Message from HOD Section -->
+        <!-- Message from HOD Section -->
         <section id="hod-message" class="content-section">
             <div class="facility-card">
                 <h1>Message from Head of Department</h1>
@@ -74,9 +67,10 @@
                     <div class="hod-circle">HOD</div>
                     <div class="hod-text">
                         <p><em>"Welcome to the Information Technology Department! We are committed to nurturing
-                            innovative minds and preparing future technology leaders. Our department combines academic
-                            excellence with practical industry exposure to create graduates who are ready to tackle
-                            tomorrow's challenges."</em></p>
+                                innovative minds and preparing future technology leaders. Our department combines
+                                academic
+                                excellence with practical industry exposure to create graduates who are ready to tackle
+                                tomorrow's challenges."</em></p>
                         <div class="hod-name">Dr. Hiteishi Diwanji, Head of Department</div>
                         <div class="hod-designation">Ph.D. Computer Science, 20+ years experience</div>
                     </div>
@@ -240,20 +234,20 @@
                                         <th>Date</th>
                                     </tr>
                                 </thead>
-                                    <tr>
-                                        <td>2023</td>
-                                        <td>Internal Hackathon</td>
-                                        <td>65</td>
-                                        <td>Prof. B. B. Panchal</td>
-                                        <td>05-03-2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2023</td>
-                                        <td>Code Sprint Competition</td>
-                                        <td>90</td>
-                                        <td>Prof. S. J. Patel</td>
-                                        <td>18-03-2023</td>
-                                    </tr>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>Internal Hackathon</td>
+                                    <td>65</td>
+                                    <td>Prof. B. B. Panchal</td>
+                                    <td>05-03-2023</td>
+                                </tr>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>Code Sprint Competition</td>
+                                    <td>90</td>
+                                    <td>Prof. S. J. Patel</td>
+                                    <td>18-03-2023</td>
+                                </tr>
                             </table>
                         </div>
                     </details>
@@ -332,8 +326,10 @@
                     </div>
                     <div class="location-map">
                         <h3>Location Map</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d917.9372212806616!2d72.54507618518043!3d23.032990658088398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84eb9f0b6429%3A0x5a27a3d5a94a2614!2sInformation%20Technology%20Department%2C%20LD%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1755669112416!5m2!1sen!2sin" 
-                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d917.9372212806616!2d72.54507618518043!3d23.032990658088398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84eb9f0b6429%3A0x5a27a3d5a94a2614!2sInformation%20Technology%20Department%2C%20LD%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1755669112416!5m2!1sen!2sin"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -374,14 +370,8 @@
             });
         });
 
-        // Hamburger toggle (added)
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggle = document.querySelector('.menu-toggle');
-            const nav = document.querySelector('nav ul');
-            toggle.addEventListener('click', () => {
-                nav.classList.toggle('show');
-            });
-        });
+
     </script>
 </body>
+
 </html>
