@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
+    /* max-width: 1600px;*/
     margin: 0 auto;
     gap: 1rem;
     flex-wrap: wrap;
@@ -332,6 +332,9 @@ main {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s ease;
+
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .strength-card:hover {
@@ -362,6 +365,7 @@ main {
 
 /* Read more button */
 .read-more {
+    display: block;
     margin: 10px auto 0 auto;
     /* keep it centered inside */
     text-align: center;
@@ -388,6 +392,7 @@ main {
     /* hidden by default */
     font-size: 11px;
     text-align: left;
+    margin-top: 10px;
 }
 
 
@@ -778,6 +783,9 @@ footer {
     .placement-table td {
         padding: 10px;
     }
+    .strength-container {
+        grid-template-columns: 1fr;
+    }
 
     .strength-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -852,7 +860,7 @@ footer {
     }
 
     .facility-card p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .excellence-container {
@@ -889,12 +897,63 @@ footer {
     }
 
     .strength-grid {
-        grid-template-columns: 1fr;
-        /* stack cards */
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 16px;
+    }
+
+    .strength-card {
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        position: relative; /* Ensure proper positioning context */
     }
 
     .strength-card img {
-        max-height: 180px;
+        width: 100%;
+        max-height: 100px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 8px;
+    }
+
+    .strength-card h3 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .strength-card p {
+        font-size: 13px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    .strength-card .more-text {
+        display: none; /* Hidden by default */
+        margin-top: 10px; /* Add some space above the expanded content */
+        padding: 10px; /* Add padding inside the expanded content */
+        background-color: #f9f9f9; /* Optional: Light background for distinction */
+        border-radius: 6px; /* Optional: Rounded corners */
+    }
+
+    .strength-card .more-text.active {
+        display: block; /* Show when active */
+    }
+
+    .read-more {
+        display: inline-block;
+        margin-top: 6px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #007bff;
+        cursor: pointer;
+    }
+
+    /* Ensure the card expands to accommodate the extra content */
+    .strength-card.expanded {
+        min-height: auto; /* Allow the card to grow */
+        overflow: visible; /* Prevent content from being cut off */
     }
 
     .industry-cards {

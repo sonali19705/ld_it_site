@@ -280,7 +280,8 @@
 
                     <!-- Alumni Connect -->
                     <div class="strength-card">
-                        <img src="https://it-dept-ldce.web.app/image/faculty-achievements.png" alt="Faculty achievements">
+                        <img src="https://it-dept-ldce.web.app/image/faculty-achievements.png"
+                            alt="Faculty achievements">
                         <h3>Faculty achievements</h3>
                         <p>Out of 18 faculties , 8 faculties hold doctorate degree and 7 are pursuing philosophy of
                             doctorate program. They are guiding 12 PhD scholars under their valuable guidance.
@@ -557,18 +558,23 @@
 
             });
         });
-        function toggleReadMore(button) {
-            const card = button.closest(".strength-card");
-            const moreText = card.querySelector(".more-text");
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".read-more");
 
-            if (moreText.style.display === "none" || moreText.style.display === "") {
-                moreText.style.display = "block";
-                button.textContent = "Read Less";
-            } else {
-                moreText.style.display = "none";
-                button.textContent = "Read More";
-            }
-        }
+            buttons.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    const moreText = this.previousElementSibling;
+                    if (moreText.style.display === "inline") {
+                        moreText.style.display = "none";
+                        this.textContent = "Read More";
+                    } else {
+                        moreText.style.display = "inline";
+                        this.textContent = "Read Less";
+                    }
+                });
+            });
+        });
+
 
     </script>
 </body>
