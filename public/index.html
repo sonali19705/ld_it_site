@@ -13,7 +13,7 @@
 
 <body>
 
-     <!-- Header and Navigation Bar -->
+    <!-- Header and Navigation Bar -->
     <header>
         <div class="header-container">
             <div class="logo">
@@ -24,7 +24,12 @@
                 <ul>
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#academic-excellence" class="nav-link">Academic Excellence</a></li>
+                    <li><a href="#placment-statistics" class="nav-link">Placement</a></li>
+                    <li><a href="#strength" class="nav-link">Strength</a></li>
+                    <li><a href="#research" class="nav-link">Research & Analysis</a></li>
                     <li><a href="#industry" class="nav-link">Industry</a></li>
+                    <li><a href="#project-summary" class="nav-link">Projects</a></li>
                     <li><a href="#magazines" class="nav-link">Magazines</a></li>
                     <li><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
@@ -68,11 +73,12 @@
                     <div class="hod-text">
                         <p><em>"Welcome to the Information Technology Department! We are committed to nurturing
                                 innovative minds and preparing future technology leaders. Our department combines
-                                academic
-                                excellence with practical industry exposure to create graduates who are ready to tackle
-                                tomorrow's challenges."</em></p>
-                        <div class="hod-name">Dr. Hiteishi Diwanji, Head of Department</div>
-                        <div class="hod-designation">Ph.D. Computer Science, 20+ years experience</div>
+                                academic excellence with practical industry exposure to create graduates who are
+                                ready to tackle tomorrow's challenges."</em></p>
+                        <div class="hod-name" onclick="window.location.href='hod-details.html'"
+                            style="cursor: pointer;">Dr. Hiteishi Diwanji, Head of Department</div>
+                        <div class="hod-designation" onclick="window.location.href='hod-details.html'"
+                            style="cursor: pointer;"> Ph.D. Computer Science, 20+ years experience</div>
                     </div>
                 </div>
             </div>
@@ -81,7 +87,7 @@
         <!-- Facilities Section -->
         <section id="facilities" class="content-section">
             <div class="facility-card">
-                <h2>Facilities</h2>
+                <h1>Facilities</h1>
                 <hr>
                 <p>Our department offers state-of-the-art facilities to support learning and research.</p>
 
@@ -105,188 +111,369 @@
         </section>
 
 
-        <!-- Industry Section -->
-        <section id="industry" class="content-section">
+        <!-- Academic Excellence Section -->
+        <section id="academic-excellence" class="content-section">
             <div class="facility-card">
-                <h2>Industry Interaction & Internships</h2>
+                <h1>Department Academic Excellence</h1>
                 <hr>
-                <div class="accordion">
-                    <details>
-                        <summary>Expert Talks / Seminars / Workshops</summary>
-                        <div class="accordion-content">
-                            <p>The department hosts expert lectures to bridge curriculum gaps and promote soft skills
-                                development.</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th>Title</th>
-                                        <th>Expert</th>
-                                        <th>Org</th>
-                                        <th>Designation</th>
-                                        <th>Date</th>
-                                        <th>Students</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Jan–March 2025 -->
-                                    <tr>
-                                        <td>2024-25</td>
-                                        <td>Advanced Software Testing</td>
-                                        <td>Mr. Bhavik Vora</td>
-                                        <td>eInfochips, Ahmedabad</td>
-                                        <td>Associate Director</td>
-                                        <td>20/02/2025</td>
-                                        <td>~80</td>
-                                    </tr>
+                <div class="excellence-container">
 
-                                    <!-- Apr–June 2025 -->
-                                    <tr>
-                                        <td>2024-25</td>
-                                        <td>Placement and GATE Preparation (Awareness Program)</td>
-                                        <td>—</td>
-                                        <td>IT Dept. (Online)</td>
-                                        <td>—</td>
-                                        <td>26/04/2025</td>
-                                        <td>~100</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2024-25</td>
-                                        <td>Research Journey of Batch 2025</td>
-                                        <td>Prof. Jahnavi Patel</td>
-                                        <td>LDCE (Lab 2005)</td>
-                                        <td>Faculty</td>
-                                        <td>25/04/2025</td>
-                                        <td>—</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2024-25</td>
-                                        <td>Generative AI for Youth</td>
-                                        <td>Prof. Shital Solanki</td>
-                                        <td>Microsoft (Online)</td>
-                                        <td>Faculty</td>
-                                        <td>28/04/2025</td>
-                                        <td>—</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2024-25</td>
-                                        <td>GitHub for Youth</td>
-                                        <td>Prof. Shital Solanki</td>
-                                        <td>Microsoft (Online)</td>
-                                        <td>Faculty</td>
-                                        <td>30/04/2025</td>
-                                        <td>—</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- GATE Qualified Students -->
+                    <div class="excellence-card gate">
+                        <h3>★ GATE Qualified Students</h3>
+                        <div class="excellence-item">
+                            <strong>2024: 15 Students Qualified</strong>
+                            <p>Top Score: 785/1000 - Priya Sharma</p>
+                        </div>
+                        <div class="excellence-item">
+                            <strong>2023: 12 Students Qualified</strong>
+                            <p>Top Score: 756/1000 - Rahul Kumar</p>
+                        </div>
+                        <div class="excellence-item">
+                            <strong>2022: 18 Students Qualified</strong>
+                            <p>Top Score: 798/1000 - Anita Patel</p>
+                        </div>
+                    </div>
 
+                    <!-- Gold Medalist Students -->
+                    <div class="excellence-card gold">
+                        <h3>✔ Gold Medalist Students</h3>
+                        <div class="excellence-item">
+                            <strong>2024: Arjun Mehta</strong>
+                            <p>CGPA: 9.85/10 - B.Tech IT</p>
                         </div>
-                    </details>
+                        <div class="excellence-item">
+                            <strong>2023: Sneha Gupta</strong>
+                            <p>CGPA: 9.78/10 - M.Tech IT</p>
+                        </div>
+                        <div class="excellence-item">
+                            <strong>2022: Vikash Singh</strong>
+                            <p>CGPA: 9.82/10 - MCA</p>
+                        </div>
+                    </div>
 
-                    <!-- Industry Visits -->
-                    <details>
-                        <summary>Industry / Field Visits</summary>
-                        <div class="accordion-content">
-                            <p>These visits provide exposure to real infrastructure and industrial practices.</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th>Place</th>
-                                        <th>Student</th>
-                                        <th>Faculty</th>
-                                        <th>Date</th>
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td>2022</td>
-                                    <td>Yudiz Solutions Pvt. Ltd.</td>
-                                    <td>50</td>
-                                    <td>Prof. B. B. Panchal, Prof. S. J. Patel, Prof. S. A. Solanki, Prof. V. B. Thakkar
-                                    </td>
-                                    <td>23-03-2022</td>
-                                </tr>
-                                <tr>
-                                    <td>2022</td>
-                                    <td>e-Infochips Pvt. Ltd.</td>
-                                    <td>46</td>
-                                    <td>Prof. B. B. Panchal, Prof. P. N. Ramanuj, Prof. S. J. Patel, Prof. M. N. Panchal
-                                    </td>
-                                    <td>28-03-2022</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </details>
-
-                    <!-- Technical Events-->
-                    <details>
-                        <summary>Technical Events</summary>
-                        <div class="accordion-content">
-                            <p>Events such as HACKATHON and code competitions foster innovation and applied learning.
-                            </p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th>Place</th>
-                                        <th>Student</th>
-                                        <th>Faculty</th>
-                                        <th>Date</th>
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td>2023</td>
-                                    <td>Internal Hackathon</td>
-                                    <td>65</td>
-                                    <td>Prof. B. B. Panchal</td>
-                                    <td>05-03-2023</td>
-                                </tr>
-                                <tr>
-                                    <td>2023</td>
-                                    <td>Code Sprint Competition</td>
-                                    <td>90</td>
-                                    <td>Prof. S. J. Patel</td>
-                                    <td>18-03-2023</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Internship Summary</summary>
-                        <div class="accordion-content">
-                            <p>Mandatory 7th and 8th semester internships are coordinated via faculty-industry
-                                collaboration.</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th>6 Weeks (Sem-7)</th>
-                                        <th>12 Weeks (Sem-8)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2022-23</td>
-                                        <td>176</td>
-                                        <td>176</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2023-24</td>
-                                        <td>179</td>
-                                        <td>178</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </details>
                 </div>
             </div>
         </section>
 
+        <!-- placement statistics Section -->
+        <section id="placment-statistics" class="content-section">
+            <div class="facility-card">
+                <h1>Placement Cell Statistics</h1>
+                <div class="placement-table-wrapper">
+                    <table class="placement-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Year 2025</th>
+                                <th>Year 2024</th>
+                                <th>Year 2023</th>
+                                <th>Year 2022</th>
+                                <th>Year 2021</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Students Selected</td>
+                                <td>1039</td>
+                                <td>943</td>
+                                <td>970</td>
+                                <td>807</td>
+                                <td>629</td>
+                                <td>4388</td>
+                            </tr>
+                            <tr>
+                                <td>Total Number Of Companies Visited</td>
+                                <td>155</td>
+                                <td>129</td>
+                                <td>145</td>
+                                <td>109</td>
+                                <td>113</td>
+                                <td>651</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>Total offers extended to Students</td>
+                                <td colspan="6">4388</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>Total Number Of Companies</td>
+                                <td colspan="6">651</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strength of the Department Section -->
+        <section id="strength" class="content-section">
+            <div class="facility-card">
+                <h1>Strength of the Department</h1>
+                <div class="strength-grid">
+
+                    <!-- Startup & Innovative Projects -->
+                    <div class="strength-card">
+                        <img src="https://it-dept-ldce.web.app/image/startup.jpg" alt="Startup and Innovative Projects">
+                        <h3>Startup and Innovative Projects</h3>
+                        <p>The Information Technology department has been approved the grant of 7,35,000 Rupees various
+                            SSIP projects under 10 faculty guide under SSIP 1.0 Policy and 8,00,000 Rupees for SSIP 2.0
+                            Policy for 12 projects
+                        </p>
+                        <div class="more-text">
+                            <ul>
+                                <li>Students of Information Technology department have been working with various
+                                    industry
+                                    defined projects to get real work exposure.</li>
+                                <li>Recently students of semester 3 and 5 have
+                                    worked on the projects like customization of OS, Measuring Wear and Tear of Cranes,
+                                    Penetration testing of Desktop application with Endel Digital.</li>
+                            </ul>
+                        </div>
+                        <span class="read-more" onclick="toggleReadMore(this)">Read More</span>
+                    </div>
+
+                    <!-- Hackathons & Tech Events -->
+                    <div class="strength-card">
+                        <img src="https://it-dept-ldce.web.app/image/hackathon.jpg" alt="Hackathons and Tech Events">
+                        <h3>Hackathons & Tech Events</h3>
+                        <p>The Information Technology department gets active participation from the students in various
+                            competitive skill building events like hackathons and tech-fests.
+                        </p>
+                        <div class="more-text">
+                            <ul>
+                                <li>The students have won various hackathon finale like Smart India Hackathon, Smart
+                                    Guajarat
+                                    Hackathon and Uhackathon in recent years.</li>
+                                <li>Recently, Team of semester 5 students participated in Synapse HackOut 2024 organized
+                                    at
+                                    Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT)
+                                    during
+                                    9-11,
+                                    August 2024.</li>
+                                <li>From 1700+ registration, this team got the 1st Prize of the hackOut and awarded
+                                    with certificate and one Award</li>
+                            </ul>
+                        </div>
+                        <span class="read-more" onclick="toggleReadMore(this)">Read More</span>
+                    </div>
+
+                    <!-- Industry–Alumni Connect -->
+                    <div class="strength-card">
+                        <img src="https://it-dept-ldce.web.app/image/industry-alumni.jpg" alt="Industry Alumni Connect">
+                        <h3>Industry–Alumni Connect</h3>
+                        <p>The Information Technology department believing in the skillful development of the young
+                            brains of the department, keeps continuous connect with current technological developments
+                            having a strong industry and alumni connect.
+                        </p>
+                        <div class="more-text">
+                            <ul>
+                                <li>Graduates working at Microsoft, Google, Amazon, and TCS.</li>
+                                <li>The department has organized 4 Technical Workshops, 22 Seminars and Webinars, 9
+                                    Industrial
+                                    Visits , 4 Faculty Development Programs, 3 Research Conferences and 42 Expert Talks
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="read-more" onclick="toggleReadMore(this)">Read More</span>
+                    </div>
+
+                    <!-- Alumni Connect -->
+                    <div class="strength-card">
+                        <img src="https://it-dept-ldce.web.app/image/faculty-achievements.png" alt="Faculty achievements">
+                        <h3>Faculty achievements</h3>
+                        <p>Out of 18 faculties , 8 faculties hold doctorate degree and 7 are pursuing philosophy of
+                            doctorate program. They are guiding 12 PhD scholars under their valuable guidance.
+                        </p>
+                        <div class="more-text">
+                            <ul>
+                                <li>Dr.K.K.Jani has been working on a project funded under STEM by Govt.of Gujarat with
+                                    total grant of Rs.5,00,000.</li>
+                                <li>Faculties of Information Technology department have taken more than three hundred
+                                    training sponsored by NPTEL,ISTE, AICTE,CTE and Udyam.</li>
+                            </ul>
+                        </div>
+                        <span class="read-more" onclick="toggleReadMore(this)">Read More</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             research Section (3 cards)
+             ========================= -->
+        <section id="research" class="content-section">
+            <div class="facility-card">
+                <h1>Research & Analysis</h1>
+                <div class="project-container">
+
+                    <!-- Card 1: M.E. Dissertation Thesis -->
+                    <div class="project-card ssip">
+                        <h3>M.E. Dissertation Thesis</h3>
+
+                        <div class="project-item">
+                            <h4>AI-Based Network Security</h4>
+                            <p>Student: Rajesh Kumar</p>
+                            <small>Guide: Dr. A. Sharma</small>
+                        </div>
+                        <div class="project-item">
+                            <h4>IoT in Smart Agriculture</h4>
+                            <p>Student: Meera Patel</p>
+                            <small>Guide: Dr. B. Singh</small>
+                        </div>
+                        <div class="project-item">
+                            <h4>Blockchain in Healthcare</h4>
+                            <p>Student: Amit Joshi</p>
+                            <small>Guide: Dr. C. Verma</small>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: B.E. Internship Statistics -->
+                    <div class="project-card yearly">
+                        <h3>B.E. internships</h3>
+                        <div class="project-item">
+                            <h4>2024</h4>
+                            <p>Total Students: 120</p>
+                            <small>Internships: 115 (95.8%) | Top Companies: TCS, Infosys, Wipro</small>
+                        </div>
+                        <div class="project-item">
+                            <h4>2023</h4>
+                            <p>Total Students: 118</p>
+                            <small>Internships: 112 (94.9%) | Top Companies: Accenture, IBM, HCL</small>
+                        </div>
+                        <div class="project-item">
+                            <h4>2022</h4>
+                            <p>Total Students: 115</p>
+                            <small>Internships: 108 (93.9%) | Top Companies: Microsoft, Google, Amazon</small>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: MCA Final Year Projects -->
+                    <div class="project-card ssip">
+                        <h3>MCA Projects</h3>
+                        <div class="project-item">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Team: 4 Students</p>
+                            <small>Tech: React, Node.js, MongoDB</small>
+                        </div>
+                        <div class="project-item">
+                            <h4>Hospital Management System</h4>
+                            <p>Team: 3 Students</p>
+                            <small>Tech: Java, Spring Boot, MySQL</small>
+                        </div>
+                        <div class="project-item">
+                            <h4>Mobile Banking App</h4>
+                            <p>Team: 4 Students</p>
+                            <small>Tech: Flutter, Firebase</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Interaction & internship -->
+        <section id="industry" class="content-section">
+            <div class="facility-card">
+                <h1>Industry Interaction & Internships</h1>
+                <div class="industry-cards">
+
+                    <!-- Expert Talks -->
+                    <div class="industry-card">
+                        <div class="card-header">
+                            <div class="icon-circle">🎤</div>
+                            <h3>Expert Talks</h3>
+                        </div>
+                        <p>Guest lectures from industry experts enhance students’ technical and professional skills.</p>
+                        <a href="expert-talks.html" class="view-details-btn">View Details</a>
+                    </div>
+
+                    <!-- industry visit -->
+                    <div class="industry-card">
+                        <div class="card-header">
+                            <div class="icon-circle">🏭</div>
+                            <h3>Industry Visits</h3>
+                        </div>
+                        <p>Students visit industries to gain practical exposure and understand real-world applications.
+                        </p>
+                        <a href="industry-visits.html" class="view-details-btn">View Details</a>
+                    </div>
+
+                    <!-- technical event -->
+                    <div class="industry-card">
+                        <div class="card-header">
+                            <div class="icon-circle">💻</div>
+                            <h3>Technical Event</h3>
+                        </div>
+                        <p>Platform to showcase innovation, problem-solving skills, workshops, and projects.</p>
+                        <a href="technical-event.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Project Summary-->
+        <section id="project-summary" class="content-section">
+            <div class="facility-card">
+                <h1>Project Summary</h1>
+                <div class="project-container">
+
+                    <!-- Left Side - SSIP Projects -->
+                    <div class="project-card ssip">
+                        <h3>SSIP Projects</h3>
+
+                        <div class="project-item">
+                            <h4>Smart Traffic Management System</h4>
+                            <p>AI-powered traffic optimization using IoT sensors</p>
+                            <small>Funding: ₹5,00,000 | Status: Ongoing</small>
+                        </div>
+
+                        <div class="project-item">
+                            <h4>Digital Healthcare Platform</h4>
+                            <p>Telemedicine solution for rural areas</p>
+                            <small>Funding: ₹3,50,000 | Status: Completed</small>
+                        </div>
+
+                        <div class="project-item">
+                            <h4>Waste Management App</h4>
+                            <p>Smart waste collection and recycling system</p>
+                            <small>Funding: ₹2,75,000 | Status: Pilot Phase</small>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Best Yearly Projects -->
+                    <div class="project-card yearly">
+                        <h3>Best Yearly Projects</h3>
+
+                        <div class="project-item">
+                            <h4>TechFest Hackathon 2024</h4>
+                            <p>48-hour coding marathon with 200+ participants</p>
+                            <small>Winner: AI-powered Study Assistant</small>
+                        </div>
+
+                        <div class="project-item">
+                            <h4>Design Engineering Challenge</h4>
+                            <p>Innovative solutions for real-world problems</p>
+                            <small>Winner: Smart Parking Solution</small>
+                        </div>
+
+                        <div class="project-item">
+                            <h4>Innovation Showcase 2024</h4>
+                            <p>Annual exhibition of student projects</p>
+                            <small>50+ projects displayed, 10 awards given</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Magazines Section -->
         <section id="magazines" class="content-section">
             <div class="facility-card">
-                <h2>Departmental Magazines</h2>
+                <h1>Departmental Magazines</h1>
                 <hr>
                 <p>The IT Department regularly publishes magazines highlighting academic achievements, technical
                     articles, and student activities.</p>
@@ -310,7 +497,7 @@
         <!-- Contact Us Section -->
         <section id="contact" class="content-section">
             <div class="facility-card">
-                <h2>Contact Us</h2>
+                <h1>Contact Us</h1>
                 <hr>
                 <div class="contact-container">
                     <div class="contact-details">
@@ -367,9 +554,21 @@
                         link.classList.add('active');
                     }
                 });
+
             });
         });
+        function toggleReadMore(button) {
+            const card = button.closest(".strength-card");
+            const moreText = card.querySelector(".more-text");
 
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "block";
+                button.textContent = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
 
     </script>
 </body>

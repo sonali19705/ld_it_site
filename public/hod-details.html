@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HOD Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #00008B;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        /* Profile Section */
+        .profile-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: nowrap;
+            /* ✅ keep side-by-side always */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            width: 160px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            flex: 1;
+            min-width: 0;
+            /* prevents overflow */
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .profile-info table {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .profile-info table td {
+            padding: 5px 10px;
+            vertical-align: top;
+        }
+
+        .profile-info p {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            background: #00008B;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 0 0 15px 0;
+            font-size: 18px;
+        }
+
+        .timeline {
+            border-left: 3px solid #00008B;
+            padding-left: 15px;
+        }
+
+        .timeline-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .timeline-item span {
+            font-weight: bold;
+            color: #00008B;
+        }
+
+        .print-btn {
+            background: #00008B;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Tablet adjustments */
+        @media (max-width: 1024px) {
+            .profile-header img {
+                width: 140px;
+            }
+
+            .profile-info h2 {
+                font-size: 22px;
+            }
+        }
+
+        /* Small Phones: only reduce font sizes a bit */
+        @media (max-width: 480px) {
+            .profile-info h2 {
+                font-size: 14x;
+            }
+
+            .profile-info table td,
+            .timeline-item {
+                font-size: 12x;
+            }
+
+            .section h3 {
+                font-size: 14x;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://ldce.ac.in/upload/logo/departments/information-technology-logo.png" alt="LDCE Logo">
+                <h1>Information Technology Department</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#academic-excellence" class="nav-link">Academic Excellence</a></li>
+                    <li><a href="#placment-statistics" class="nav-link">Placement</a></li>
+                    <li><a href="#strength" class="nav-link">Strength</a></li>
+                    <li><a href="#research" class="nav-link">Research & Analysis</a></li>
+                    <li><a href="#industry" class="nav-link">Industry</a></li>
+                    <li><a href="#project-summary" class="nav-link">Projects</a></li>
+                    <li><a href="#magazines" class="nav-link">Magazines</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-header">
+            <img src="https://ldce.ac.in/images/profile/user/photo/Hiteishi-Diwanji-head.it.161-z82LHaLlEO.png"
+                alt="HOD Photo">
+            <div class="profile-info">
+                <h2>Dr. Hiteishi Diwanji</h2>
+                <table>
+                    <tr>
+                        <td><b>Designation:</b></td>
+                        <td>Head of Department & Professor</td>
+                    </tr>
+                    <tr>
+                        <td><b>Department:</b></td>
+                        <td>Information Technology</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email ID:</b></td>
+                        <td><a href="mailto:head_it@ldce.ac.in">head_it@ldce.ac.in</a></td>
+                    </tr>
+                </table>
+                <p><i>
+                        Research interest are Information and Network Security, Wireless Technology,
+                        Mobile Ad Hoc Network, IoT, Data Science, Machine Learning
+                    </i></p>
+                <button class="print-btn" onclick="window.print()">Print</button>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section">
+            <h3>Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span>Associate Professor (2012 – 2022)</span><br>
+                    L.D. College of Engineering
+                </div>
+                <div class="timeline-item">
+                    <span>Assistant Professor (2005 – 2012)</span><br>
+                    L.D. College of Engineering
+                </div>
+                <div class="timeline-item">
+                    <span>Assistant Professor (2001 – 2005)</span><br>
+                    Vishwakarma Engineering College
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h3>Education</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span>PhD (2011 – 2018)</span><br>
+                    Gujarat Technological University
+                </div>
+                <div class="timeline-item">
+                    <span>M.E. Computer Engineering (2007 – 2009)</span><br>
+                    Dharmsinh Desai University
+                </div>
+                <div class="timeline-item">
+                    <span>B.E. Computer Engineering (1990 – 1994)</span><br>
+                    L.D. College of Engineering
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Information Technology Department, L. D. College of Engineering. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
